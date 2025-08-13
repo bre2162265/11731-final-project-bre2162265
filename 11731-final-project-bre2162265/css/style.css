@@ -9,8 +9,52 @@ body {
     margin-top: 50px;
 }
 header {
-    background: black url(../Images/hellofriendbackground.jpg) no-repeat center;
+    background-color: black; 
+    background-image: url("../images/hellofriendbackground.jpg");
+    background-repeat: no-repeat; 
+    background-position:center;
     background-size: cover;
     color: white;
     margin: 0;
+    height : 400px;
+    
 }
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0;
+    color:black;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #2d3437;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: #135367;
+    color: #ffffff;
+}
+
+nav {
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
