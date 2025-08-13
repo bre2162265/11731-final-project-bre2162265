@@ -19,6 +19,32 @@ header {
     height : 400px;
     
 }
+.friend-header {
+    background-color: black;
+    background-image: url("../images/findafriendimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    height: 400px;
+}
+.friend-header h1{
+    color:#ffffff;
+}
+.volunteer-header {
+    background-color: black;
+    background-image: url("../images/volunteer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    height: 400px;
+}
+.volunteer-header h1{
+    color:#ffffff;
+}
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
