@@ -9,8 +9,8 @@ Lesson: Final Project
 <title>Hello Friend</title>
 <meta charset="UTF-8">
 <meta name="author" content="Brenda Whitson">
-<meta name="description" content="A site for lonely adults of all ages to find companionship.  Having companionship helps fight depression and loneliness. Volunteer to help or find help today.">
-<meta name="keywords" content="loneliness, depression, companionship, help, volunteer">
+<meta name="description" content="A page to sign up to find a friend an companionship.  Having companionship helps fight depression and loneliness. Sign up to find a friend today.">
+<meta name="keywords" content="loneliness, depression, companionship, help, services, friend">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,3 +26,67 @@ Lesson: Final Project
           </ul>
       </nav>
    </header>
+
+   <main>
+      <table>
+         <tr>
+         <th>Number of Participants</th>
+         <th>Online</th>
+         <th>In Person</th>
+         </tr>
+         <tr>
+            <th>One on One</th>
+            <td>Have a conversation through Zoom, Instant messaging, or even a penpal(email or letters)
+               Play games together online, watch a movie, or take a class together.
+            </td>
+            <td>Meet for coffee, lunch, or dinner.  Go for a walk or hike.  Share a hobby or interest.</td>
+         </tr>
+         <tr>
+            <th>Group</th>
+            <td>Join a group chat, participate in online events, or attend virtual meetups which include book club and online gaming.</td>
+            <td>Attend local events, join clubs, or participate in community activities.</td>
+         </tr>
+      </table>
+      <br>
+      <br>
+      <form>
+         <h2>Sign Up to Find a Friend</h2>
+         <p>Please fill out the form below to get started:</p>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+
+         <label for="phone">Phone Number:</label>
+         <input type="tel" id="phone" name="phone"><br>
+         <br>
+         <br>
+         <p>Are you wanting in person, online or both?</p>
+         <label><input type="radio" name="requesttype"
+          value="inperson" id="inperson">In person</label>
+         <label><input type="radio"
+          name="requesttype" value="online" id="online">Online</label>
+          <label><input type="radio"
+          name="requesttype" value="both" id="both">Both</label>
+         <br>
+         <br>
+         <p>Do you want to do one on one activities or Group activities.  Choose both if you are interested in all activities.</p>
+         <label><input type="checkbox" name="activity" value="oneonone" id="oneonone" aria-label="One on One">One on one</label>
+         <label><input type="checkbox" name="activity" value="group" id="group" aria-label="Group">Group</label> <br>
+         <br>
+         <label for="preferences">Preferences:</label><br>
+         <textarea id="preferences" name="preferences" rows="4" placeholder="What are you looking for in a friend?"></textarea><br>
+
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+         <p>By submitting this form, you agree to our <a href="Policy.html">Privacy Policy</a>.</p>
+         <p>We will contact you via the provided email or phone number to discuss your preferences and attempt to match you with a suitable friend.</p>
+         <p>Thank you for reaching out to Hello Friend. We look forward to helping you find companionship.</p>
+      </form>
+   
+   </main>
+   <footer>
+      <p><small> Photo by <a href="https://unsplash.com/photos/woman-in-black-and-white-checkered-long-sleeve-shirt-sitting-beside-man-in-green-crew-neck-l_ExpFwwOEg">Toa Heftiba</a> <br>
+          &copy; 2025 Hello Friend bre2162265. All rights reserved.</small></p>
+   </footer>
