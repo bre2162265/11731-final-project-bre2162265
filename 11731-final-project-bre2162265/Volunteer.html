@@ -26,3 +26,69 @@ Lesson: Final Project
           </ul>
       </nav>
    </header>
+   <main>
+      <h2>Volunteer to Help</h2>
+      <p>At Hello Friend, we believe that everyone has the power to make a difference in someone's life. 
+         By volunteering, you can help combat loneliness and bring joy to those who need it most. 
+         Whether you have a few hours a week or just want to help occasionally, your time and kindness can create meaningful connections.</p>
+      <p>As a volunteer, you can:</p>
+      <ul>
+         <li>Engage in one-on-one conversations with individuals seeking companionship.</li>
+         <li>Participate in group activities and events to foster community.</li>
+         <li>Share your skills and hobbies with others.</li>
+         <li>Provide emotional support and encouragement.</li>
+      </ul>
+      <p>If you're ready to make a positive impact, please fill out the form below:</p>
+
+      <form>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+
+         <label for="phone">Phone:</label>
+         <input type="tel" id="phone" name="phone" required>
+
+         <label for="availability">Availability(Online, In person, Days and times):</label>
+         <textarea id="availability" name="availability" rows="4" required></textarea>
+
+         <input type="submit" onclick="submitForm()" value="Submit" aria-label="Submit volunteer form">
+         <input type="reset" onclick="formReset()" value="Reset" aria-label="Reset form">
+         <p>Thank you for your willingness to help others.  We will contact you soon with more information about how you can get involved.</p>
+      </form>
+      <p id="resetMessage" style="visibility: hidden;">The form has been reset!</p>
+
+      <h2>Donations</h2>
+      <p>Don't have time to volunteer but still want to make a difference and support our mission?  Make a donation to help keep 
+         fighting loneliness and depression.  Your donation will help us maintain the website, provide resources, and support our volunteers.</p>
+      <p>Fill out the form to start the Donation process</p>  
+      <form>
+         <label for="donorName">Name:</label>
+         <input type="text" id="donorName" name="donorName" required>
+
+         <label for="donorEmail">Email:</label>
+         <input type="email" id="donorEmail" name="donorEmail" required>
+
+         <label for="donorPhone">Phone:</label>
+         <input type="tel" id="donorPhone" name="donorPhone" required>
+
+         <label for="donationAmount">Donation Amount:</label>
+         <input type="number" id="donationAmount" name="donationAmount" required>
+
+         <input type="submit" onclick="submitForm()" value="Donate" aria-label="Submit donation form">
+         <input type="reset" onclick="formReset()" value="Reset" aria-label="Reset form">
+         <p>Thank you for your generosity.  Your donation will help us continue our mission to combat loneliness and provide companionship to those in need.</p>
+         
+      </form>
+         <p id="resetMessage" style="visibility: hidden;">The form has been reset!</p>
+   </main>
+   <footer>
+      <p><small> Photo by <a href="https://unsplash.com/photos/view-of-two-persons-hands-lyiKExA4zQA">Austin Kehmeier</a> <br>
+          &copy; 2025 Hello Friend bre2162265. All rights reserved.</small>Last Modified - <span
+          id="lastModified"></span></p>
+   </footer>
+   </div>
+   <script src ="scripts/javascript.js"></script>
+</body>
+</html>

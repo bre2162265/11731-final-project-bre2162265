@@ -78,15 +78,23 @@ Lesson: Final Project
          <label for="preferences">Preferences:</label><br>
          <textarea id="preferences" name="preferences" rows="4" placeholder="What are you looking for in a friend?"></textarea><br>
 
-         <button type="submit">Submit</button>
-         <button type="reset">Reset</button>
+         <input type="submit" onclick="submitForm()" value="Submit" aria-label="Submit find a friend form">
+         <input type="reset" onclick="formReset()" value="Reset" aria-label="Reset form">
          <p>By submitting this form, you agree to our <a href="Policy.html">Privacy Policy</a>.</p>
          <p>We will contact you via the provided email or phone number to discuss your preferences and attempt to match you with a suitable friend.</p>
          <p>Thank you for reaching out to Hello Friend. We look forward to helping you find companionship.</p>
       </form>
+      <p id="resetMessage" style="visibility: hidden;">The form has been reset!</p>
+              
    
    </main>
    <footer>
       <p><small> Photo by <a href="https://unsplash.com/photos/woman-in-black-and-white-checkered-long-sleeve-shirt-sitting-beside-man-in-green-crew-neck-l_ExpFwwOEg">Toa Heftiba</a> <br>
-          &copy; 2025 Hello Friend bre2162265. All rights reserved.</small></p>
+          &copy; 2025 Hello Friend bre2162265. All rights reserved.</small>Last Modified - <span
+          id="lastModified"></span></p>
    </footer>
+   </div>
+      <script src ="scripts/javascript.js"></script>
+</body>
+</html>
+   
