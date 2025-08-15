@@ -1,13 +1,23 @@
+/** 
+    Author: Brenda Whitson
+    Course: CIS133DA 11731
+    Lesson: Final Project
+**/
+
+/* Base body styles for font and layout */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin: 0;
 }
 
+/* Wrapper for page content */
 #wrapper {
     background-color: #ddd;
     margin-top: 50px;
 }
+
+/* Header styles for main page */
 header {
     background-color: black; 
     background-image: url("../images/hellofriendbackground.jpg");
@@ -17,8 +27,9 @@ header {
     color: white;
     margin: 0;
     height : 400px;
-    
 }
+
+/* Header styles for Find a Friend page */
 .friend-header {
     background-color: black;
     background-image: url("../images/findafriendimage.jpg");
@@ -32,6 +43,8 @@ header {
 .friend-header h1{
     color:#ffffff;
 }
+
+/* Header styles for Volunteer page */
 .volunteer-header {
     background-color: black;
     background-image: url("../images/volunteer.jpg");
@@ -45,6 +58,8 @@ header {
 .volunteer-header h1{
     color:#ffffff;
 }
+
+/* Main heading styles */
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -54,6 +69,15 @@ h1 {
     color:black;
 }
 
+/* Link styles */
+a {
+    color: orangered;
+}
+a:hover {
+    color: red;
+}
+
+/* Navigation bar styles */
 nav ul {
     list-style-type: none;
     background-color: #2d3437;
@@ -61,29 +85,43 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-
 nav li {
     float: left;
 }
-
 nav a {
     display: block;
     color: white;
     text-decoration: none;
     padding: 20px;
 }
-
 nav a:hover {
     background-color: #135367;
     color: #ffffff;
 }
-
 nav {
     top: 0;
     position: absolute;
     width: 100%;
 }
-/* Main Styles */
+
+/* Responsive Styles for mobile screens */
+@media screen and (max-width: 450px) {
+  /* Make navigation bar larger and stack links vertically */
+  nav ul {
+    font-size: 1.6em;
+  }
+  nav li {
+    float: none;           /* Stack links vertically */
+    width: 100%;           /* Full width for each link */
+  }
+  nav a {
+    font-size: 1.6em;      /* Make links even bigger */
+    padding: 24px;         /* More space for touch */
+    text-align: center;    /* Center text */
+  }
+}
+
+/* Main content styles */
 main {
     padding: 20px;
     width: 900px;
@@ -91,14 +129,16 @@ main {
     display: block;
     margin: 0 auto;
 }
+
+/* Card container styles for grid layout */
 .container{
   display: grid;
-  
   gap: 20px;
   max-width: 4000px;
   margin: auto;
 }
 
+/* Card styles for content blocks */
 .card {
   flex: 1 1 calc(50% - 20px);
   box-sizing: border-box;
@@ -118,64 +158,67 @@ main {
     margin:0;
     padding: 10px 0;
     font-size: .85rem;
-    
 }
+
+/* Highlighted text styles */
 span {
     font-weight: bold;
     color: #063c4c;
 }
-/*Table Styles **/
+
+/* Table Styles */
 table {
-border-collapse: collapse;
-width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 th, td {
-border: #000000 thin solid;
-background-color: #ffffff;
-padding: 5px;
+    border: #000000 thin solid;
+    background-color: #ffffff;
+    padding: 5px;
 }
 th {
-background-color: #135367;
-color: #ffffff;
-padding: 10px;
-text-align: center
+    background-color: #135367;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center
 }
 
-/*Form Styles */
+/* Form Styles */
 form {
-border: medium solid #2d3437;
-padding: 20px;
+    border: medium solid #2d3437;
+    padding: 20px;
 }
 label {
-display: block;
-font-weight: bold;
-padding: 5px;
+    display: block;
+    font-weight: bold;
+    padding: 5px;
 }
 textarea {
-width: 100%;
-height: 200px;
-box-sizing: border-box;
-margin-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 button {
-margin: 10px 5px;
-padding: 5px 10px;
+    margin: 10px 5px;
+    padding: 5px 10px;
 }
 button:hover {
-background: #135367;
-color: white;
+    background: #135367;
+    color: white;
 }
 #resetMessage {
-visibility: hidden;
-font-weight: bold;
-color: red;
+    visibility: hidden;
+    font-weight: bold;
+    color: red;
 }
+
 /* Footer Styles */
 footer {
-background-color: #2d3437;
-color: white;
-padding: 20px;
-text-align: center;
+    background-color: #2d3437;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 

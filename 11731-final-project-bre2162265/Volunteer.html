@@ -7,19 +7,26 @@ Section: #11731
 Lesson: Final Project
 -->
 <title>Hello Friend</title>
+<!-- Character encoding for proper text display -->
 <meta charset="UTF-8">
+<!-- Author meta tag for documentation -->
 <meta name="author" content="Brenda Whitson">
+<!-- Description for search engines and accessibility -->
 <meta name="description" content="A site for lonely adults of all ages to find companionship.  Having companionship helps fight depression and loneliness. Volunteer to help or find help today.">
+<!-- Keywords for SEO -->
 <meta name="keywords" content="loneliness, depression, companionship, help, volunteer">
+<!-- Link to main CSS stylesheet -->
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div id="wrapper">
+    <!-- Header section with page title and navigation -->
     <header class="volunteer-header">
        <h1>Volunteer</h1>
        <nav>
           <ul>
+            <!-- Navigation links to other pages -->
             <li><a href="HelloFriend.html">Home</a></li>
              <li><a href="Friend.html">Find a Friend</a></li>
              <li><a href="Policy.html">Policy</a></li>
@@ -27,6 +34,7 @@ Lesson: Final Project
       </nav>
    </header>
    <main>
+      <!-- Volunteer information section -->
       <h2>Volunteer to Help</h2>
       <p>At Hello Friend, we believe that everyone has the power to make a difference in someone's life. 
          By volunteering, you can help combat loneliness and bring joy to those who need it most. 
@@ -40,6 +48,7 @@ Lesson: Final Project
       </ul>
       <p>If you're ready to make a positive impact, please fill out the form below:</p>
 
+      <!-- Volunteer sign-up form -->
       <form>
          <label for="name">Name:</label>
          <input type="text" id="name" name="name" required>
@@ -50,19 +59,24 @@ Lesson: Final Project
          <label for="phone">Phone:</label>
          <input type="tel" id="phone" name="phone" required>
 
-         <label for="availability">Availability(Online, In person, Days and times):</label>
+         <label for="availability">Availability (Online, In person, Days and times):</label>
          <textarea id="availability" name="availability" rows="4" required></textarea>
 
+         <!-- Submit and reset buttons -->
          <input type="submit" onclick="submitForm()" value="Submit" aria-label="Submit volunteer form">
          <input type="reset" onclick="formReset()" value="Reset" aria-label="Reset form">
          <p>Thank you for your willingness to help others.  We will contact you soon with more information about how you can get involved.</p>
       </form>
+      <!-- Message shown when form is reset -->
       <p id="resetMessage" style="visibility: hidden;">The form has been reset!</p>
 
+      <!-- Donation information section -->
       <h2>Donations</h2>
       <p>Don't have time to volunteer but still want to make a difference and support our mission?  Make a donation to help keep 
          fighting loneliness and depression.  Your donation will help us maintain the website, provide resources, and support our volunteers.</p>
       <p>Fill out the form to start the Donation process</p>  
+
+      <!-- Donation form -->
       <form>
          <label for="donorName">Name:</label>
          <input type="text" id="donorName" name="donorName" required>
@@ -76,19 +90,22 @@ Lesson: Final Project
          <label for="donationAmount">Donation Amount:</label>
          <input type="number" id="donationAmount" name="donationAmount" required>
 
+         <!-- Submit and reset buttons -->
          <input type="submit" onclick="submitForm()" value="Donate" aria-label="Submit donation form">
          <input type="reset" onclick="formReset()" value="Reset" aria-label="Reset form">
          <p>Thank you for your generosity.  Your donation will help us continue our mission to combat loneliness and provide companionship to those in need.</p>
-         
       </form>
-         <p id="resetMessage" style="visibility: hidden;">The form has been reset!</p>
+      <!-- Message shown when form is reset -->
+      <p id="resetMessage" style="visibility: hidden;">The form has been reset!</p>
    </main>
+   <!-- Footer section with credits and last modified date -->
    <footer>
       <p><small> Photo by <a href="https://unsplash.com/photos/view-of-two-persons-hands-lyiKExA4zQA">Austin Kehmeier</a> <br>
-          &copy; 2025 Hello Friend bre2162265. All rights reserved.</small>Last Modified - <span
-          id="lastModified"></span></p>
+          &copy; 2025 Hello Friend bre2162265. All rights reserved.</small>
+          Last Modified - <span id="lastModified"></span></p>
    </footer>
    </div>
+   <!-- Link to external JavaScript file for dynamic features -->
    <script src ="scripts/javascript.js"></script>
 </body>
 </html>

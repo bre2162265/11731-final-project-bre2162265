@@ -7,19 +7,26 @@ Section: #11731
 Lesson: Final Project
 -->
 <title>Hello Friend</title>
+<!-- Character encoding for proper text display -->
 <meta charset="UTF-8">
+<!-- Author meta tag for documentation -->
 <meta name="author" content="Brenda Whitson">
-<meta name="description" content="A page to sign up to find a friend an companionship.  Having companionship helps fight depression and loneliness. Sign up to find a friend today.">
+<!-- Description for search engines and accessibility -->
+<meta name="description" content="A page to sign up to find a friend and companionship. Having companionship helps fight depression and loneliness. Sign up to find a friend today.">
+<!-- Keywords for SEO -->
 <meta name="keywords" content="loneliness, depression, companionship, help, services, friend">
+<!-- Link to main CSS stylesheet -->
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div id="wrapper">
+    <!-- Header section with page title and navigation -->
     <header class="friend-header">
        <h1>Find a Friend</h1>
        <nav>
           <ul>
+             <!-- Navigation links to other pages -->
              <li><a href="HelloFriend.html">Home</a></li>
              <li><a href="Volunteer.html">Volunteer</a></li>
              <li><a href="Policy.html">Policy</a></li>
@@ -28,6 +35,7 @@ Lesson: Final Project
    </header>
 
    <main>
+      <!-- Table describing participation options -->
       <table>
          <tr>
          <th>Number of Participants</th>
@@ -36,10 +44,10 @@ Lesson: Final Project
          </tr>
          <tr>
             <th>One on One</th>
-            <td>Have a conversation through Zoom, Instant messaging, or even a penpal(email or letters)
+            <td>Have a conversation through Zoom, Instant messaging, or even a penpal (email or letters).
                Play games together online, watch a movie, or take a class together.
             </td>
-            <td>Meet for coffee, lunch, or dinner.  Go for a walk or hike.  Share a hobby or interest.</td>
+            <td>Meet for coffee, lunch, or dinner. Go for a walk or hike. Share a hobby or interest.</td>
          </tr>
          <tr>
             <th>Group</th>
@@ -49,52 +57,61 @@ Lesson: Final Project
       </table>
       <br>
       <br>
+      <!-- Sign-up form for finding a friend -->
       <form>
          <h2>Sign Up to Find a Friend</h2>
          <p>Please fill out the form below to get started:</p>
+         <!-- Name input -->
          <label for="name">Name:</label>
          <input type="text" id="name" name="name" required>
 
+         <!-- Email input -->
          <label for="email">Email:</label>
          <input type="email" id="email" name="email" required>
 
+         <!-- Phone input -->
          <label for="phone">Phone Number:</label>
          <input type="tel" id="phone" name="phone"><br>
          <br>
          <br>
+         <!-- Request type radio buttons -->
          <p>Are you wanting in person, online or both?</p>
          <label><input type="radio" name="requesttype"
           value="inperson" id="inperson">In person</label>
          <label><input type="radio"
           name="requesttype" value="online" id="online">Online</label>
-          <label><input type="radio"
+         <label><input type="radio"
           name="requesttype" value="both" id="both">Both</label>
          <br>
          <br>
-         <p>Do you want to do one on one activities or Group activities.  Choose both if you are interested in all activities.</p>
+         <!-- Activity type checkboxes -->
+         <p>Do you want to do one on one activities or Group activities? Choose both if you are interested in all activities.</p>
          <label><input type="checkbox" name="activity" value="oneonone" id="oneonone" aria-label="One on One">One on one</label>
          <label><input type="checkbox" name="activity" value="group" id="group" aria-label="Group">Group</label> <br>
          <br>
+         <!-- Preferences textarea -->
          <label for="preferences">Preferences:</label><br>
          <textarea id="preferences" name="preferences" rows="4" placeholder="What are you looking for in a friend?"></textarea><br>
 
+         <!-- Submit and reset buttons -->
          <input type="submit" onclick="submitForm()" value="Submit" aria-label="Submit find a friend form">
          <input type="reset" onclick="formReset()" value="Reset" aria-label="Reset form">
+         <!-- Privacy policy and contact info -->
          <p>By submitting this form, you agree to our <a href="Policy.html">Privacy Policy</a>.</p>
          <p>We will contact you via the provided email or phone number to discuss your preferences and attempt to match you with a suitable friend.</p>
          <p>Thank you for reaching out to Hello Friend. We look forward to helping you find companionship.</p>
       </form>
+      <!-- Message shown when form is reset -->
       <p id="resetMessage" style="visibility: hidden;">The form has been reset!</p>
-              
-   
    </main>
+   <!-- Footer section with credits and last modified date -->
    <footer>
       <p><small> Photo by <a href="https://unsplash.com/photos/woman-in-black-and-white-checkered-long-sleeve-shirt-sitting-beside-man-in-green-crew-neck-l_ExpFwwOEg">Toa Heftiba</a> <br>
-          &copy; 2025 Hello Friend bre2162265. All rights reserved.</small>Last Modified - <span
-          id="lastModified"></span></p>
+          &copy; 2025 Hello Friend bre2162265. All rights reserved.</small>
+          Last Modified - <span id="lastModified"></span></p>
    </footer>
    </div>
-      <script src ="scripts/javascript.js"></script>
+   <!-- Link to external JavaScript file for dynamic features -->
+   <script src ="scripts/javascript.js"></script>
 </body>
 </html>
-   

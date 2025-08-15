@@ -2,7 +2,7 @@
 Author: Brenda Whitson
 Class: CIS 133DA
 Section: 11731
-Lesson: 11
+Lesson: Final Project
 */
 // Shows what when document was last modified
 document.getElementById("lastModified").innerHTML = document.lastModified;
